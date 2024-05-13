@@ -16,6 +16,7 @@ CREATE TABLE Clientes (
     correoElectronico VARCHAR(100)
 );
 
+
 CREATE TABLE Ventas (
     idVenta INT AUTO_INCREMENT PRIMARY KEY,
     idVehiculo INT,
