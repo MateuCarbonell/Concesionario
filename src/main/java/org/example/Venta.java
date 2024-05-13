@@ -5,7 +5,7 @@ import java.util.Date;
 public class Venta {
     private int idVenta;
     private Vehiculo vehiculo;
-    private Cliente cliente;
+    private Persona cliente;
     private Date fechaVenta;
     private double precioVenta;
 
