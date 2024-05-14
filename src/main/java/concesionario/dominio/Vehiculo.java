@@ -1,6 +1,6 @@
-package org.example;
+package concesionario.dominio;
 
-public class Vehiculo {
+public class Vehiculo implements SolicitarInformacion {
     private int idVehiculo;
     private String marca;
     private String modelo;
@@ -66,6 +66,24 @@ public class Vehiculo {
 
     public void setEstado(String estado) {
         this.estado = estado;
+    }
+
+    @Override
+    public String toString() {
+        return "Vehiculo{" +
+                "idVehiculo=" + idVehiculo +
+                ", marca='" + marca + '\'' +
+                ", modelo='" + modelo + '\'' +
+                ", año=" + año +
+                ", precio=" + precio +
+                ", estado='" + estado + '\'' +
+                '}';
+    }
+
+    // Implementación de interfaz
+    @Override
+    public void solicitarInformacion() {
+        System.out.println(this.toString());
     }
 }
 

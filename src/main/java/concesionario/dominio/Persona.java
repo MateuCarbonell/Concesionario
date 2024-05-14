@@ -1,6 +1,6 @@
-package org.example;
+package concesionario.dominio;
 
-public abstract class Persona implements SolicitarInformacion{
+public abstract class Persona {
     private int idCliente;
     private String nombre;
     private String apellido;
@@ -59,27 +59,21 @@ public abstract class Persona implements SolicitarInformacion{
         this.correoElectronico = correoElectronico;
     }
 
-    public boolean isCompraRealizada() {
-        return compraRealizada;
-    }
 
-    public void setCompraRealizada(boolean compraRealizada) {
-        this.compraRealizada = compraRealizada;
-    }
 
-    public Persona(int idCliente, String nombre, String apellido, String telefono, String direccion, String correoElectronico, boolean compraRealizada) {
+    public Persona(int idCliente, String nombre, String apellido, String telefono, String direccion, String correoElectronico) {
         this.idCliente = idCliente;
         this.nombre = nombre;
         this.apellido = apellido;
         this.telefono = telefono;
         this.direccion = direccion;
         this.correoElectronico = correoElectronico;
-        this.compraRealizada = compraRealizada;
     }
 
     // metodos y lógica
+    abstract void comprarVehiculo(Vehiculo vehiculo,GestorBD gestorBD);
     private boolean compraRealizada = false;
-    abstract void comprarVehiculo(Vehiculo vehiculo);
+
 
     boolean haRealizadoCompra() {
         return compraRealizada;

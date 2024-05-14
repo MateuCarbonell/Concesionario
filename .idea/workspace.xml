@@ -5,13 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f3b1f47e-79a6-49eb-b3f0-887230e100b3" name="Changes" comment="primer paso">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Concesionario.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Persona.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/SolicitarInformacion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inventarioImport" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/concesionario/dominio/GestorBD.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/concesionario/dominio/Venta.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/concesionario/main/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/concesionario/dominio/ClienteTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Cliente.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Venta.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Venta.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/concesionario/dominio/Cliente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Concesionario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/concesionario/dominio/Concesionario.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/GestorBD.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Persona.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/concesionario/dominio/Persona.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/SolicitarInformacion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/concesionario/dominio/SolicitarInformacion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Vehiculo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/concesionario/dominio/Vehiculo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Venta.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/bbdd.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/concesionario/dominio/bbdd.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,7 +30,6 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -35,12 +43,12 @@
     &quot;assignee&quot;: &quot;MateuCarbonell&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/MateuCarbonell/Concesionario.git",
-    "accountId": "f225870b-296d-4eff-b592-7d173ebd6855"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/MateuCarbonell/Concesionario.git&quot;,
+    &quot;accountId&quot;: &quot;da2785d5-62a3-41e3-8c02-17e781a39666&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
 }</component>
@@ -53,14 +61,22 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.Main.executor": "Run",
+    "JUnit.ClienteTest.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/mateu/IdeaProjects/ProyectoTareasProgramacion",
-    "onboarding.tips.debug.path": "C:/Users/mateu/IdeaProjects/ProyectoConcesionario/src/main/java/org/example/Main.java"
+    "onboarding.tips.debug.path": "C:/Users/mateu/IdeaProjects/ProyectoConcesionario/src/main/java/org/example/Main.java",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="concesionario.dominio" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -105,8 +121,8 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/example/Main.java</url>
-          <line>19</line>
+          <url>file://$PROJECT_DIR$/src/main/java/concesionario/main/Main.java</url>
+          <line>60</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
