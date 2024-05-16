@@ -8,7 +8,7 @@ public class Cliente extends Persona {
 
 
 
-    // Implementación del método para realizar una compra de vehículo
+    // no aplicado
     @Override
     public void comprarVehiculo(Vehiculo vehiculo, GestorBD gestorBD) {
         if (!haRealizadoCompra()) {

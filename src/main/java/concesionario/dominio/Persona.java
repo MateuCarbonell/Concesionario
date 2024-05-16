@@ -72,6 +72,7 @@ public abstract class Persona {
 
     // metodos y lógica
     abstract void comprarVehiculo(Vehiculo vehiculo,GestorBD gestorBD);
+
     private boolean compraRealizada = false;
 
 

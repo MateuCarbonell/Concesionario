@@ -1,14 +1,13 @@
 package concesionario.dominio;
 import java.sql.*;
 import java.sql.Date;
-
 import com.zaxxer.hikari.HikariConfig;
 import com.zaxxer.hikari.HikariDataSource;
 import javax.sql.DataSource;
 
 public class GestorBD {
     private DataSource dataSource;
-    // Constructor
+
     public GestorBD(){
         this.dataSource=createDataSource();
 
@@ -62,17 +61,18 @@ public class GestorBD {
     }
 
     // UPDATE
-    // ACABAR!!!!!!!!!!
+
     public void actualizarVehiculo(int id, Vehiculo vehiculo) {
-        String query = "UPDATE Vehiculos SET marca = ?, modelo = ?, año = ?, precio = ?, estado = ? WHERE idVehiculo = ?";
+        String query = "UPDATE Vehiculos SET idVehiculo= ?, marca = ?, modelo = ?, año = ?, precio = ?, estado = ? WHERE idVehiculo = ?";
         try (Connection connection = dataSource.getConnection();
              PreparedStatement st = connection.prepareStatement(query)) {
-            st.setString(1, vehiculo.getMarca());
-            st.setString(2, vehiculo.getModelo());
-            st.setInt(3, vehiculo.getAño());
-            st.setDouble(4, vehiculo.getPrecio());
-            st.setString(5, vehiculo.getEstado());
-            st.setInt(6, id);
+            st.setInt(1, vehiculo.getIdVehiculo());
+            st.setString(2, vehiculo.getMarca());
+            st.setString(3, vehiculo.getModelo());
+            st.setInt(4, vehiculo.getAño());
+            st.setDouble(5, vehiculo.getPrecio());
+            st.setString(6, vehiculo.getEstado());
+            st.setInt(7, id);
             st.executeUpdate();
         } catch (SQLException e) {
             e.printStackTrace();

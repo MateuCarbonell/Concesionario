@@ -14,6 +14,10 @@ public class Concesionario {
 
     }
 
+    public List<Vehiculo> getInventario() {
+        return inventario;
+    }
+
     public void agregarVehiculo(Vehiculo vehiculo){
         inventario.add(vehiculo);
     }
@@ -67,11 +71,11 @@ public class Concesionario {
                 // Dividir la línea en partes utilizando la coma
                 String[] partes = linea.split(",");
                 int idVehiculo = Integer.parseInt(partes[0].trim()); // Convertir la cadena del id a entero
-                String marca = partes[1].trim();
-                String modelo = partes[2].trim();
+                String marca = partes[1].trim(); // recoge marca
+                String modelo = partes[2].trim(); // recoge modelo
                 int año = Integer.parseInt(partes[3].trim()); // Convertir la cadena del año a entero
                 double precio = Double.parseDouble(partes[4].trim()); // Convertir la cadena del precio a double
-                String estado = partes[5].trim();
+                String estado = partes[5].trim(); // recoge estado
                 // Crear un nuevo objeto Vehiculo y agregarlo al inventario
                 Vehiculo vehiculo = new Vehiculo(idVehiculo, marca, modelo, año, precio, estado);
                 inventario.add(vehiculo);
