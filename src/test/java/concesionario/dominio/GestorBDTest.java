@@ -10,14 +10,14 @@ public class GestorBDTest {
 
     @Test
     void agregarVehiculo() {
-        // Arrange
+
         GestorBD gestorBD = new GestorBD();
         Vehiculo vehiculo = new Vehiculo(999, "Toyota", "Corolla", 2022, 25000.0, "Nuevo");
 
-        // Act
+
         gestorBD.agregarVehiculo(vehiculo);
 
-        // Assert
+
         Vehiculo vehiculoAgregado = gestorBD.obtenerVehiculoPorId(999);
         assertNotNull(vehiculoAgregado);
         assertEquals(vehiculo.getIdVehiculo(), vehiculoAgregado.getIdVehiculo());
@@ -30,15 +30,15 @@ public class GestorBDTest {
 
     @Test
     void eliminarVehiculoPorId() {
-        // Arrange
+
         GestorBD gestorBD = new GestorBD();
         Vehiculo vehiculo = new Vehiculo(10000, "Toyota", "Corolla", 2022, 25000.0, "Nuevo");
         gestorBD.agregarVehiculo(vehiculo);
 
-        // Act
+
         gestorBD.eliminarVehiculoPorId(10000);
 
-        // Assert
+
         assertNull(gestorBD.obtenerVehiculoPorId(10000));
     }
 }

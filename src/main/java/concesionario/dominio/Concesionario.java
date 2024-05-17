@@ -27,9 +27,6 @@ public class Concesionario {
         inventario.add(vehiculo);
     }
     public void eliminarVehiculo(Vehiculo vehiculo) {
-        if (!inventario.contains(vehiculo)) {
-            throw new IllegalArgumentException("El vehículo con ID " + vehiculo.getIdVehiculo() + " no existe en el inventario.");
-        }
         inventario.remove(vehiculo);
     }
 
