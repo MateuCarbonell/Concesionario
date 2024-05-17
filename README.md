@@ -29,8 +29,8 @@ Este proyecto es un sistema de gestión para un concesionario de vehículos, que
   - `buscarVehiculosPorMarca(String marca)`: busca en la lista la marca de todos los vehículos y la compara con la marca introducida por el usuario (con equalsIgnoreCase(marca) para no tener en cuenta mayúsculas, minúsculas, etc.) y devuelve una nueva lista con todos los vehículos que coincidan con la marca introducida.
   - `calcularPrecioInventario()`: Simplemente suma, con un bucle for y getPrecio()
   - `mostrarInventario()`: Muestra todos los vehículos del inventario.
-  - `guardarInventarioEnArchivo(String nombreArchivo)`: Utiliza BufferedWriter para escribir en el archivo todos los vehículos (recorriendo la lista, separando con comas y añadiendo un salto de línea al final). En este método se hace uso de excepciones.
-  - `cargarInventarioDesdeArchivo(String nombreArchivo)`: Utiliza BufferedReader, crea una lista y separa con la “,”, va guardando en variables todos los datos del archivo (usando el índice de String[] partes), hace las conversiones de tipo que sean necesarias y luego crea un nuevo objeto que se añadirá a la lista de vehículos. En este método se hace uso de excepciones.
+  - `guardarInventarioEnArchivo(String nombreArchivo)`: Utiliza BufferedWriter para escribir en el archivo todos los vehículos (recorriendo la lista, separando con comas y añadiendo un salto de línea al final). En este método se hace uso de excepciones. ***El archivo se llama inventario.txt, está en el propio repo***
+  - `cargarInventarioDesdeArchivo(String nombreArchivo)`: Utiliza BufferedReader, crea una lista y separa con la “,”, va guardando en variables todos los datos del archivo (usando el índice de String[] partes), hace las conversiones de tipo que sean necesarias y luego crea un nuevo objeto que se añadirá a la lista de vehículos. En este método se hace uso de excepciones. ***El archivo se llama inventarioImport.txt, está en el propio repo***
 
 ### Clase GestorBD
 #### Todas los métodos hacen uso de excepciones.
