@@ -135,23 +135,32 @@ public class Main {
             switch (opcion) {
                 case 1:
                     Vehiculo nuevoVehiculo = crearVehiculo(scanner);
-                    concesionario.agregarVehiculo(nuevoVehiculo);
+                    try {
+                        concesionario.agregarVehiculo(nuevoVehiculo);
+                        System.out.println("Vehículo agregado correctamente.");
+                    } catch (IllegalArgumentException e) {
+                        System.err.println("Error: " + e.getMessage());
+                    }
                     break;
                 case 2:
                     System.out.println("Ingresa el ID del vehículo a eliminar:");
                     int idEliminar = scanner.nextInt();
-                    boolean vehiculoEliminado = false;
-                    for(Vehiculo vehiculo : concesionario.getInventario()){
-                        if(vehiculo.getIdVehiculo() == idEliminar){
-                            concesionario.eliminarVehiculo(vehiculo);
-                            vehiculoEliminado = true;
+                    Vehiculo vehiculoEliminar = null;
+                    for (Vehiculo vehiculo : concesionario.getInventario()) {
+                        if (vehiculo.getIdVehiculo() == idEliminar) {
+                            vehiculoEliminar = vehiculo;
                             break;
                         }
                     }
-                    if (vehiculoEliminado){
-                        System.out.println("Eliminado correctamente.");
-                    }else{
-                        System.out.println("No se encontró el vehiculo con esa ID");
+                    if (vehiculoEliminar != null) {
+                        try {
+                            concesionario.eliminarVehiculo(vehiculoEliminar);
+                            System.out.println("Vehículo eliminado correctamente.");
+                        } catch (IllegalArgumentException e) {
+                            System.err.println("Error: " + e.getMessage());
+                        }
+                    } else {
+                        System.out.println("No se encontró el vehículo con esa ID.");
                     }
                     break;
                 case 3:

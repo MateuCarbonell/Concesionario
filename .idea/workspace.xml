@@ -4,18 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f3b1f47e-79a6-49eb-b3f0-887230e100b3" name="Changes" comment="99%">
-      <change afterPath="$PROJECT_DIR$/src/test/java/concesionario/dominio/ConcesionarioTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/concesionario/dominio/GestorBDTest.java" afterDir="false" />
+    <list default="true" id="f3b1f47e-79a6-49eb-b3f0-887230e100b3" name="Changes" comment="finalizado">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inventario.txt" beforeDir="false" afterPath="$PROJECT_DIR$/inventario.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inventarioImport" beforeDir="false" afterPath="$PROJECT_DIR$/inventarioImport" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/concesionario/dominio/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/concesionario/dominio/Cliente.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/concesionario/dominio/Concesionario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/concesionario/dominio/Concesionario.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/concesionario/dominio/GestorBD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/concesionario/dominio/GestorBD.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/concesionario/dominio/Persona.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/concesionario/dominio/Persona.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/concesionario/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/concesionario/main/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/concesionario/dominio/ClienteTest.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,22 +45,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Main.executor": "Run",
-    "JUnit.ClienteTest.executor": "Run",
-    "JUnit.ConcesionarioTest.executor": "Run",
-    "JUnit.GestorBDTest.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/mateu/IdeaProjects/ProyectoTareasProgramacion",
-    "onboarding.tips.debug.path": "C:/Users/mateu/IdeaProjects/ProyectoConcesionario/src/main/java/org/example/Main.java",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ClienteTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ConcesionarioTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.GestorBDTest.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/mateu/IdeaProjects/ProyectoTareasProgramacion&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/mateu/IdeaProjects/ProyectoConcesionario/src/main/java/org/example/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="concesionario.dominio" />
@@ -123,12 +115,21 @@
       <option name="project" value="LOCAL" />
       <updated>1715720048474</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="finalizado">
+      <option name="closed" value="true" />
+      <created>1715823156183</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1715823156183</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="primer paso" />
     <MESSAGE value="99%" />
-    <option name="LAST_COMMIT_MESSAGE" value="99%" />
+    <MESSAGE value="finalizado" />
+    <option name="LAST_COMMIT_MESSAGE" value="finalizado" />
   </component>
 </project>
